@@ -1,12 +1,12 @@
 <!-- Dynamic SVG Animation Header -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=venom&color=gradient&customColorList=6,12,20&height=300&section=header&text=KAZUKI&fontSize=90&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=Building%20the%20Future%20with%20AI&descAlignY=55&descSize=25" width="100%">
+  <img src="https://capsule-render.vercel.app/api?type=venom&color=gradient&customColorList=6,12,20&height=300&section=header&text=Kaz&fontSize=90&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=AI%E3%81%A7%E6%9C%AA%E6%9D%A5%E3%82%92%E5%89%B5%E9%80%A0%E3%81%99%E3%82%8B&descAlignY=55&descSize=25" width="100%">
 </div>
 
 <!-- Typing SVG -->
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=2D9CFF&center=true&vCenter=true&width=600&lines=Full+Stack+Developer+%F0%9F%92%BB;AI+Engineer+%F0%9F%A4%96;Startup+Founder+%F0%9F%9A%80;Open+Source+Enthusiast+%E2%9C%A8" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Noto+Sans+JP&pause=1000&color=2D9CFF&center=true&vCenter=true&width=600&lines=%E3%83%95%E3%83%AB%E3%82%B9%E3%82%BF%E3%83%83%E3%82%AF%E9%96%8B%E7%99%BA%E8%80%85+%F0%9F%92%BB;AI%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2+%F0%9F%A4%96;%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%97%E5%89%B5%E6%A5%AD%E8%80%85+%F0%9F%9A%80;%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9%E6%84%9B%E5%A5%BD%E5%AE%B6+%E2%9C%A8" alt="Typing SVG" />
   </a>
 </p>
 
@@ -39,10 +39,10 @@
 ## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="30"> About Me
 
 ```typescript
-const kazuki = {
+const kaz = {
   pronouns: "he" | "him",
   code: ["TypeScript", "Python", "JavaScript", "Go"],
-  askMeAbout: ["AI", "Web Dev", "Startups", "Innovation"],
+  askMeAbout: ["AI技術", "ウェブ開発", "スタートアップ", "イノベーション"],
   technologies: {
     frontEnd: {
       js: ["React", "Next.js", "Vue"],
@@ -58,42 +58,42 @@ const kazuki = {
     databases: ["PostgreSQL", "MongoDB", "Redis", "Prisma"],
     ai_ml: ["TensorFlow", "PyTorch", "LangChain", "OpenAI"]
   },
-  currentFocus: "Building AI-powered solutions at ZETTAI Inc.",
-  funFact: "I believe in the power of 'ゼッタイやる' (Never Give Up)!"
+  currentFocus: "ZETTAI Inc.でAI駆動ソリューションを構築中",
+  funFact: "'ゼッタイやる'の力を信じています！"
 };
 ```
 
 <br clear="both"/>
 
 <!-- Current Status -->
-## 🚀 What I'm up to
+## 🚀 現在の取り組み
 
-- 🔭 Currently building **[ZETTAI Inc.](https://zettai.inc)** - AI Solutions for Japanese Enterprises
-- 🌱 Learning **Advanced LLM Techniques** and **Web3 Technologies**
-- 👯 Looking to collaborate on **Open Source AI Projects**
-- 💬 Ask me about **Full Stack Development, AI Integration, Startup Journey**
-- ⚡ Fun fact: **I started coding at 15 and never stopped!**
+- 🔭 **[ZETTAI Inc.](https://zettai.inc)** を構築中 - 日本企業向けAIソリューション
+- 🌱 **高度なLLM技術** と **Web3テクノロジー** を学習中
+- 👯 **オープンソースAIプロジェクト** でのコラボレーションを歓迎
+- 💬 **フルスタック開発、AI統合、起業体験** についてお気軽にご相談ください
+- ⚡ 豆知識: **15歳からプログラミングを始めて、今も続けています！**
 
 <!-- Tech Stack Section with Icons -->
-## 💻 Tech Stack
+## 💻 技術スタック
 
 <div align="center">
 
-### Languages
+### プログラミング言語
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
 ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
 
-### Frontend
+### フロントエンド
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 ![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue)
 
-### Backend & Database
+### バックエンド・データベース
 ![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
 ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
@@ -101,7 +101,7 @@ const kazuki = {
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
 
-### AI/ML & Cloud
+### AI/ML・クラウド
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
@@ -111,7 +111,7 @@ const kazuki = {
 </div>
 
 <!-- GitHub Stats Section with Custom Theme -->
-## 📊 GitHub Stats
+## 📊 GitHub統計
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=kazujp225&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117&title_color=F85D7F&icon_color=F8D866" height="192px"/>
@@ -129,7 +129,7 @@ const kazuki = {
 </div>
 
 <!-- Projects Showcase -->
-## 🎯 Featured Projects
+## 🎯 注目プロジェクト
 
 <div align="center">
   <a href="https://github.com/kazujp225/Zettai-HP">
@@ -139,35 +139,35 @@ const kazuki = {
 </div>
 
 <!-- Trophies -->
-## 🏆 GitHub Trophies
+## 🏆 GitHubトロフィー
 
 <div align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=kazujp225&theme=radical&no-frame=true&no-bg=false&column=7&margin-w=4&margin-h=4" />
 </div>
 
 <!-- Skills Animation -->
-## 🎨 Skills Visualization
+## 🎨 スキル可視化
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=ts,react,nextjs,python,tensorflow,aws,docker,kubernetes,git,vscode,figma,tailwind&theme=dark&perline=6" />
 </div>
 
 <!-- Random Dev Quote -->
-## 💭 Dev Quote
+## 💭 開発者の名言
 
 <div align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" />
 </div>
 
 <!-- Snake Animation -->
-## 🐍 Contribution Snake
+## 🐍 コントリビューション履歴
 
 <div align="center">
   <img src="https://github.com/kazujp225/kazujp225/blob/output/github-contribution-grid-snake-dark.svg" />
 </div>
 
 <!-- Connect Section -->
-## 🤝 Let's Connect!
+## 🤝 つながりましょう！
 
 <div align="center">
   
@@ -187,7 +187,7 @@ const kazuki = {
 </div>
 
 <!-- Support Section -->
-## 💖 Support My Work
+## 💖 活動をサポート
 
 <div align="center">
   <a href="https://www.buymeacoffee.com/kazujp225">
