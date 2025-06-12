@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ウェブ用 Typing SVG サンプル集</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+        
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: clamp(1rem, 4vw, 2rem);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .examples-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        
+        .example {
+            padding: 1.25rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        h2 {
+            text-align: center;
+            font-size: clamp(1.25rem, 3vw, 1.75rem);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+        
+        h3 {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            margin-bottom: 1rem;
+            color: #FFE082;
+            font-weight: 600;
+        }
+        
+        code {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 0.25rem 0.5rem;
+            border-radius: 6px;
+            font-family: 'Fira Code', 'SFMono-Regular', 'Consolas', monospace;
+            font-size: 0.875rem;
+            word-break: break-all;
+        }
+        
+        .code-block {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 1rem 0;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .code-block code {
+            background: none;
+            padding: 0;
+            font-size: clamp(0.75rem, 2vw, 0.875rem);
+            line-height: 1.5;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+        
+        .preview {
+            text-align: center;
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .preview img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        ul {
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+        
+        pre {
+            margin: 0;
+            font-size: clamp(0.75rem, 2vw, 0.875rem);
+            line-height: 1.5;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+        
+        /* タブレット対応 */
+        @media (min-width: 768px) {
+            body {
+                padding: 1.5rem;
+            }
+            
+            .examples-grid {
+                grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+                gap: 2rem;
+            }
+            
+            .code-block code {
+                word-break: normal;
+            }
+        }
+        
+        /* デスクトップ対応 */
+        @media (min-width: 1024px) {
+            body {
+                padding: 2rem;
+            }
+            
+            .main-grid {
+                gap: 2rem;
+            }
+            
+            .examples-grid {
+                grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            }
+            
+            .container {
+                padding: 2.5rem;
+            }
+            
+            .example {
+                padding: 2rem;
+            }
+        }
+        
+        /* 大画面対応 */
+        @media (min-width: 1400px) {
+            .examples-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        /* アクセシビリティ対応 */
+        @media (prefers-reduced-motion: reduce) {
+            .preview img {
+                animation: none;
+            }
+        }
+        
+        /* ダークモード対応 */
+        @media (prefers-color-scheme: dark) {
+            .container {
+                background: rgba(255, 255, 255, 0.08);
+            }
+            
+            .example {
+                background: rgba(255, 255, 255, 0.03);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-grid">
+        <header class="container">
+            <h1>🎯 ウェブ用 Typing SVG サンプル集</h1>
+            <p>動的なタイピングアニメーションでウェブサイトを魅力的に演出しましょう。<br>
+            モバイル・タブレット・デスクトップ全てに最適化されたサンプルをご紹介します。</p>
+        </header>
+
+        <section class="container">
+            <h2>📝 基本的な使用例</h2>
+            
+            <div class="examples-grid">
+                <div class="example">
+                    <h3>1. シンプルなウェルカムメッセージ</h3>
+                    <div class="preview">
+                        <img src="https://readme-typing-svg.demolab.com?font=Inter&size=24&color=4FC3F7&center=true&vCenter=true&width=500&lines=Welcome+to+My+Website!;I'm+a+Web+Developer;Let's+Build+Something+Amazing!" alt="Welcome Typing">
+                    </div>
+                    <div class="code-block">
+                        <code>&lt;img src="https://readme-typing-svg.demolab.com?font=Inter&size=24&color=4FC3F7&center=true&vCenter=true&width=500&lines=Welcome+to+My+Website!;I'm+a+Web+Developer;Let's+Build+Something+Amazing!" alt="Welcome Typing"&gt;</code>
+                    </div>
+                </div>
+                
+                <div class="example">
+                    <h3>2. 日本語対応版</h3>
+                    <div class="preview">
+                        <img src="https://readme-typing-svg.demolab.com?font=Noto+Sans+JP&size=22&color=FF6B9D&center=true&vCenter=true&width=600&lines=こんにちは、世界！;私はウェブ開発者です;一緒に素晴らしいものを作りましょう！;よろしくお願いします🙏" alt="日本語タイピング">
+                    </div>
+                    <div class="code-block">
+                        <code>&lt;img src="https://readme-typing-svg.demolab.com?font=Noto+Sans+JP&size=22&color=FF6B9D&center=true&vCenter=true&width=600&lines=こんにちは、世界！;私はウェブ開発者です;一緒に素晴らしいものを作りましょう！;よろしくお願いします🙏" alt="日本語タイピング"&gt;</code>
+                    </div>
+                </div>
+                
+                <div class="example">
+                    <h3>3. ビジネス・企業向け</h3>
+                    <div class="preview">
+                        <img src="https://readme-typing-svg.demolab.com?font=Inter&size=26&color=00E676&center=true&vCenter=true&width=700&lines=Innovation+Starts+Here;Digital+Transformation;Your+Success+is+Our+Mission;Contact+Us+Today!" alt="Business Typing">
+                    </div>
+                    <div class="code-block">
+                        <code>&lt;img src="https://readme-typing-svg.demolab.com?font=Inter&size=26&color=00E676&center=true&vCenter=true&width=700&lines=Innovation+Starts+Here;Digital+Transformation;Your+Success+is+Our+Mission;Contact+Us+Today!" alt="Business Typing"&gt;</code>
+                    </div>
+                </div>
+                
+                <div class="example">
+                    <h3>4. テクノロジー・開発者向け</h3>
+                    <div class="preview">
+                        <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&color=FFD54F&center=true&vCenter=true&width=650&lines=console.log('Hello+World!');const+developer+=+await+getCoffee();Building+the+Future+with+Code;Open+Source+Enthusiast+🚀" alt="Developer Typing">
+                    </div>
+                    <div class="code-block">
+                        <code>&lt;img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&color=FFD54F&center=true&vCenter=true&width=650&lines=console.log('Hello+World!');const+developer+=+await+getCoffee();Building+the+Future+with+Code;Open+Source+Enthusiast+🚀" alt="Developer Typing"&gt;</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>⚙️ パラメータ詳細</h2>
+            
+            <div class="example">
+                <h3>主要パラメータ</h3>
+                <ul>
+                    <li><code>font</code>: フォント名（Inter, Arial, Fira+Code, Noto+Sans+JP など）</li>
+                    <li><code>size</code>: フォントサイズ（数値）</li>
+                    <li><code>color</code>: テキストカラー（16進数、色名）</li>
+                    <li><code>width</code>: SVGの幅（ピクセル）</li>
+                    <li><code>height</code>: SVGの高さ（ピクセル）</li>
+                    <li><code>lines</code>: 表示するテキスト（セミコロン区切り）</li>
+                    <li><code>center</code>: 水平中央揃え（true/false）</li>
+                    <li><code>vCenter</code>: 垂直中央揃え（true/false）</li>
+                    <li><code>pause</code>: 各行の間隔（ミリ秒）</li>
+                    <li><code>duration</code>: タイピング速度（ミリ秒）</li>
+                    <li><code>repeat</code>: リピート（true/false）</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>🎨 カスタマイズ例</h2>
+            
+            <div class="examples-grid">
+                <div class="example">
+                    <h3>1. スロータイピング（ゆっくり）</h3>
+                    <div class="preview">
+                        <img src="https://readme-typing-svg.demolab.com?font=Inter&size=24&color=E1BEE7&center=true&vCenter=true&width=500&duration=6000&pause=2000&lines=Slow+and+Steady;Quality+over+Speed;Attention+to+Detail" alt="Slow Typing">
+                    </div>
+                </div>
+                
+                <div class="example">
+                    <h3>2. ファストタイピング（速い）</h3>
+                    <div class="preview">
+                        <img src="https://readme-typing-svg.demolab.com?font=Inter&size=24&color=FF5722&center=true&vCenter=true&width=500&duration=2000&pause=500&lines=Fast+and+Furious!;Quick+Response;Rapid+Development" alt="Fast Typing">
+                    </div>
+                </div>
+                
+                <div class="example">
+                    <h3>3. グラデーションカラー風</h3>
+                    <div class="preview">
+                        <img src="https://readme-typing-svg.demolab.com?font=Inter&size=26&color=9C27B0&center=true&vCenter=true&width=600&lines=Creative+Solutions;Beautiful+Design;User+Experience" alt="Purple Typing">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>💡 実装のヒント</h2>
+            <ul>
+                <li><strong>レスポンシブ対応</strong>: <code>max-width: 100%</code> を CSS で設定し、画面サイズに応じてフォントサイズを調整</li>
+                <li><strong>アクセシビリティ</strong>: 必ず <code>alt</code> 属性を設定し、スクリーンリーダー対応を行う</li>
+                <li><strong>パフォーマンス</strong>: 必要以上に長いテキストは避け、適切なキャッシュ設定を行う</li>
+                <li><strong>SEO対策</strong>: 重要なテキストは通常のHTMLでも提供し、検索エンジンが認識できるようにする</li>
+                <li><strong>フォールバック</strong>: 画像が読み込まれない場合の代替テキストを準備し、ユーザビリティを確保</li>
+                <li><strong>モバイル最適化</strong>: タッチデバイスでの操作性を考慮し、適切なサイズ設定を行う</li>
+                <li><strong>読み込み速度</strong>: 外部サービス利用時は読み込み時間を考慮した設計を行う</li>
+            </ul>
+        </section>
+
+        <section class="container">
+            <h2>🚀 React/Next.js での実装例</h2>
+            <div class="code-block">
+<pre>
+// React Componentとして使用
+import React from 'react';
+
+const TypingHeader = ({ lines, color = "4F46E5", size = 24, font = "Noto+Sans+JP" }) => {
+  const typingUrl = `https://readme-typing-svg.demolab.com?font=${font}&size=${size}&color=${color}&center=true&vCenter=true&width=600&lines=${lines.join(';')}`;
+  
+  return (
+    &lt;div className="typing-container"&gt;
+      &lt;img 
+        src={typingUrl}
+        alt="タイピングアニメーション"
+        className="typing-animation"
+        loading="lazy"
+      /&gt;
+    &lt;/div&gt;
+  );
+};
+
+// CSS（モバイル対応）
+.typing-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.typing-animation {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+// 使用例
+&lt;TypingHeader 
+  lines={["ウェブサイトへようこそ！", "素晴らしいアプリを作ります", "一緒に働きましょう"]}
+  color="FF6B6B"
+  size={28}
+  font="Noto+Sans+JP"
+/&gt;
+</pre>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
