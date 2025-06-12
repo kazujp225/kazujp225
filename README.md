@@ -1,6 +1,6 @@
 <!-- Dynamic SVG Animation Header -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=venom&color=gradient&customColorList=6,12,20&height=300&section=header&text=Kaz&fontSize=90&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=AI%E3%81%A7%E6%9C%AA%E6%9D%A5%E3%82%92%E5%89%B5%E9%80%A0%E3%81%99%E3%82%8B&descAlignY=55&descSize=25" width="100%">
+  <img src="https://capsule-render.vercel.app/api?type=venom&color=gradient&customColorList=6,12,20&height=300&section=header&text=Kaz&fontSize=90&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=%E6%8A%80%E8%A1%93%E3%81%A7%E4%B8%96%E7%95%8C%E3%82%92%E5%A4%89%E3%81%88%E3%82%8B&descAlignY=55&descSize=28" width="100%">
 </div>
 
 <!-- Typing SVG -->
